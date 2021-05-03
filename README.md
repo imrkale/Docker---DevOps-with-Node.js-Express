@@ -1,4 +1,5 @@
 Getting Started with docker
+
 1. Install docker from hub.docker.com make sure that you signup before installing docker
 2. Now create your express server and create Dockerfile
 3. Dockerfile contains all the dependencies,modules of your application to build/create the image
@@ -10,8 +11,10 @@ Getting Started with docker
 9. Now run docker image as a container use --> docker run -p [localhost_port_no,container_port_no] -d --name <give_container_name> <image_name>
 10. To list all the containers use --> docker ps -a
 11. To list all the running container use --> docker ps
-12. To start the container use --> docker start         and to stop use --> docker stop
+12. To start the container use --> docker start and to stop use --> docker stop
 13. To remove the container use --> docker rm <container_name> -f
-13. To create a copy of image to new image use --> docker tag <existing_image_name> <new_image_name>
-14. To push the image to the docker hub create a repository on docker platform and from your CLI type --> docker push <your-create-repo_name>
-15. To pull the image from the docker hub use --> docker pull <your-create-repo_name>
+14. To create a copy of image to new image use --> docker tag <existing_image_name> <new_image_name>
+15. To push the image to the docker hub create a repository on docker platform and from your CLI type --> docker push <your-create-repo_name>
+16. To pull the image from the docker hub use --> docker pull <your-create-repo_name>
+17. To create volume in powershell --> docker run -v ${pwd}:/app -p 3000:2000 -d --name node_container node_image1
+18. To create volume in cmd docker --> run -v %cd%:/app -p 3000:2000 -d --name node_container node_image1
